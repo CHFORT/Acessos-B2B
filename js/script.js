@@ -148,4 +148,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (prodForm) {
         prodForm.addEventListener('submit', (e) => submitFormToN8N(e, N8N_WEBHOOK_URL_PROD, 'Produção'));
     }
+})
+document.querySelector("form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+ 
+  const data = {
+    nome: document.querySelector("#nome").value,
+    email: document.querySelector("#email").value,
+    cnpj: document.querySelector("#cnpj").value
+  };
+ 
+  await fetch("http://localhost:5678/webhook-test/acesso-sandbok", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+ 
+  alert("Solicitação enviada com sucesso!");
 });
+    ;
