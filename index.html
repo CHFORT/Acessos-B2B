@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Partner Hub | Bayer</title>
+    <meta name="description"
+        content="Portal de Integração para Parceiros Bayer. Acesse a documentação técnica, verifique o status das APIs e solicite acesso aos ambientes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Phosphor Icons for modern slick icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <header class="glass-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="ph ph-plugs-connected"></i>
+                <span>Integration Partner Hub</span>
+            </div>
+            <nav id="main-nav">
+                <a href="#docs">Documentação</a>
+                <a href="#health">Status</a>
+                <a href="#faq">FAQ</a>
+                <a href="#access" class="btn btn-primary">Solicitar Acesso</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="badge">Portal para Parceiros</div>
+                <h1>Conecte-se ao Futuro com as <span class="text-gradient">APIs Bayer</span></h1>
+                <p>Integre seus sistemas com nossa plataforma de maneira simples, segura e eficiente. Acesse a
+                    documentação técnica, monitore o status dos serviços e solicite as suas credenciais para os
+                    ambientes de testes e produção.</p>
+                <div class="hero-actions">
+                    <a href="#docs" class="btn btn-primary">Ver Documentação <i class="ph ph-arrow-right"></i></a>
+                    <a href="#access" class="btn btn-secondary">Solicitar Acesso <i class="ph ph-key"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card visual-card">
+                    <div class="mock-code">
+                        <div class="dots"><span></span><span></span><span></span></div>
+                        <pre><code><span class="keyword">const</span> <span class="function">fetchApi</span> = <span class="keyword">async</span> () => {
+  <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="function">fetch</span>(<span class="string">'/bayer/api/v1/data'</span>, {
+    headers: { <span class="string">'Authorization'</span>: <span class="string">'Bearer {token}'</span> }
+  });
+  <span class="keyword">return</span> response.<span class="function">json</span>();
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="section container">
+            <div class="section-header">
+                <h2>Documentação <span class="text-gradient">Técnica</span></h2>
+                <p>Acesse as especificações completas das nossas APIs através do portal parceiro do Postman.</p>
+            </div>
+            <div class="docs-grid">
+                <div class="glass-card docs-card hover-glow">
+                    <div class="icon-wrapper"><i class="ph ph-book-open-text"></i></div>
+                    <h3>Manual Completo</h3>
+                    <p>Encontre rotas, parâmetros, exemplos de requisição e respostas completas das nossas APIs
+                        estruturadas no Postman.</p>
+                    <a href="https://documenter.getpostman.com/view/22946735/2sA3BhduVo#331cb405-be4a-43d0-b4d2-20d4616afc32"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-outline">Acessar no Postman <i
+                            class="ph ph-external-link"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="health" class="section container">
+            <div class="section-header">
+                <h2>Health <span class="text-gradient">Status</span></h2>
+                <p>Monitoramento em tempo real da disponibilidade e estabilidade dos nossos serviços de integração.</p>
+            </div>
+            <div class="health-grid">
+                <div class="glass-card status-card hover-glow">
+                    <div class="status-header">
+                        <h4>API Autenticação</h4>
+                        <div class="status-indicator operational"><span class="pulse"></span> Operacional</div>
+                    </div>
+                    <div class="uptime">Uptime: 99.98%</div>
+                </div>
+                <div class="glass-card status-card hover-glow">
+                    <div class="status-header">
+                        <h4>API Entrega</h4>
+                        <div class="status-indicator operational"><span class="pulse"></span> Operacional</div>
+                    </div>
+                    <div class="uptime">Uptime: 99.95%</div>
+                </div>
+                <div class="glass-card status-card hover-glow">
+                    <div class="status-header">
+                        <h4>API Pending List</h4>
+                        <div class="status-indicator degraded"><span class="pulse"></span> Alta Latência</div>
+                    </div>
+                    <div class="uptime">Uptime: 99.80%</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section container">
+            <div class="section-header">
+                <h2>Perguntas <span class="text-gradient">Frequentes</span> (FAQ)</h2>
+                <p>Dúvidas comuns sobre o processo de integração e acesso aos ambientes.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Como obtenho as credenciais do ambiente de testes?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Preencha o formulário de "Ambiente de Testes" abaixo. Nosso sistema provisionará
+                            automaticamente seus dados através do N8N e você receberá as credenciais no email informado
+                            em alguns minutos.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Qual é o tempo de resposta para acesso em Produção?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O acesso produtivo requer a abertura de um ticket no nosso Zendesk. Após a solicitação (pelo
+                            formulário abaixo), a equipe de arquitetura fará a avaliação. O SLA padrão é de 2 a 3 dias
+                            úteis para a aprovação e liberação.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Como relato um problema na API?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Acesse o painel do seu ticket no Zendesk ou envie um e-mail com os detalhes do erro (Payload,
+                            Response text, Timestamp, Ambiente) para nosso suporte técnico dedicado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="access" class="section container">
+            <div class="section-header">
+                <h2>Solicitação de <span class="text-gradient">Acesso</span></h2>
+                <p>Escolha o ambiente desejado para iniciar a integração com nossos serviços.</p>
+            </div>
+
+            <div class="tabs-container glass-card">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="test">Ambiente de Testes</button>
+                    <button class="tab-btn" data-tab="prod">Ambiente de Produção</button>
+                </div>
+
+                <div class="tab-content active" id="tab-test">
+                    <div class="form-description">
+                        <i class="ph ph-flask text-gradient"></i>
+                        <div>
+                            <h3>Acesso Sandbox / Testes</h3>
+                            <p>Preencha os dados abaixo. O sistema (N8N) criará sua conta de integração sandbox e os
+                                dados de teste automatizados serão enviados para o seu e-mail.</p>
+                        </div>
+                    </div>
+                    <form id="test-form" class="access-form">
+                        <div class="form-group">
+                            <label for="test-name">Nome do Solicitante</label>
+                            <input type="text" id="test-name" required placeholder="Ex: João Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="test-email">E-mail Corporativo</label>
+                            <input type="email" id="test-email" required placeholder="nome@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="test-company">Empresa Parceira / CNPJ</label>
+                            <input type="text" id="test-company" required placeholder="Nome da Empresa">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <span>Solicitar Acesso (Testes)</span>
+                            <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                    <script>
+                        document.getElementById("test-form").addEventListener("submit", async function (e) {
+                            e.preventDefault();
+
+                            const data = {
+                                name: document.getElementById("test-name").value,
+                                email: document.getElementById("test-email").value,
+                                company: document.getElementById("test-company").value
+                            };
+
+                            try {
+                                const response = await fetch("http://localhost:5678/webhook/zendesk-ticket", {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json"
+                                    },
+                                    body: JSON.stringify(data)
+                                });
+
+                                if (response.ok) {
+                                    alert("Solicitação enviada com sucesso!");
+                                    this.reset();
+                                } else {
+                                    alert("Erro ao enviar solicitação.");
+                                }
+                            } catch (error) {
+                                alert("Erro na comunicação com o servidor.");
+                                console.error(error);
+                            }
+                        });
+                    </script>
+                </div>
+
+                <div class="tab-content" id="tab-prod">
+                    <div class="form-description">
+                        <i class="ph ph-rocket text-gradient"></i>
+                        <div>
+                            <h3>Acesso Produtivo</h3>
+                            <p>Esta solicitação abrirá um ticket no Zendesk para aprovação da equipe técnica. Forneça o
+                                máximo de detalhes possível sobre a integração e o caso de uso.</p>
+                        </div>
+                    </div>
+                    <form id="prod-form" class="access-form">
+                        <div class="form-group">
+                            <label for="prod-name">Nome do Solicitante</label>
+                            <input type="text" id="prod-name" required placeholder="Ex: João Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="prod-email">E-mail Corporativo</label>
+                            <input type="email" id="prod-email" required placeholder="nome@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="prod-reason">Justificativa / Escopo da Integração</label>
+                            <textarea id="prod-reason" rows="4" required
+                                placeholder="Descreva brevemente o caso de uso, volumetria esperada e os dados que serão acessados..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100">
+                            <span>Abrir Ticket (Acesso Produtivo)</span>
+                            <i class="ph ph-ticket"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="ph ph-plugs-connected text-primary"></i>
+                <span style="font-weight:700; font-size: 1.25rem;">Integration Partner Hub</span>
+            </div>
+            <p>&copy; 2026 Bayer. Integration Partner Hub. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
