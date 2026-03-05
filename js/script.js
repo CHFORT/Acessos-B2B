@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Form Handling with N8N Webhook Simulation
     // In a production environment, you will replace these URLs with the mapped N8N Webhooks
-    const N8N_WEBHOOK_URL_TEST = 'https://n8n.your-bayer-domain.com/webhook/post-test-access';
+    const N8N_WEBHOOK_URL_TEST = 'http://18.231.17.29:5678/webhook-test/acesso-sandbox';
     const N8N_WEBHOOK_URL_PROD = 'https://n8n.your-bayer-domain.com/webhook/post-prod-access';
 
     const testForm = document.getElementById('test-form');
@@ -158,7 +158,7 @@ document.querySelector("form").addEventListener("submit", async function(e) {
     cnpj: document.querySelector("#cnpj").value
   };
  
-  await fetch("http://localhost:5678/webhook-test/acesso-sandbok", {
+  await fetch("http://18.231.17.29:5678/webhook-test/acesso-sandbox", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
